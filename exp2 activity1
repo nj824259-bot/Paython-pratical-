@@ -1,0 +1,12 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Mar 24 13:39:07 2026
+
+@author: nayan jadhav 
+
+age = int(input("Enter your age: "))
+
+if age >= 18:
+    print("Entry Allowed")
+else:
+    print("Entry Denied") 
