@@ -1,0 +1,31 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Tue Apr 28 13:37:57 2026
+
+@author: nayan jadhav
+"""
+
+class Vehicle:
+    def _init_(self, name, fuel_used, distance_travelled):
+        self.name = name
+        self.fuel_used = fuel_used        # in liters
+        self.distance_travelled = distance_travelled  # in kilometers
+
+    def calculate_fuel_efficiency(self):
+        if self.fuel_used == 0:
+            return 0
+        return self.distance_travelled / self.fuel_used
+
+    def display_details(self):
+        efficiency = self.calculate_fuel_efficiency()
+        print("Vehicle Name:", self.name)
+        print("Fuel Used (liters):", self.fuel_used)
+        print("Distance Travelled (km):", self.distance_travelled)
+        print("Fuel Efficiency (km/l):", round(efficiency, 2))
+
+
+# Creating object
+vehicle1 = Vehicle("Car", 20, 300)
+
+# Displaying details
+vehicle1.display_details() 
